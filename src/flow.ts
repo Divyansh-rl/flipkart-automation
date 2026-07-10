@@ -1,44 +1,4 @@
 import { Page } from "playwright";
-import {
-  openListing,
-  selectCategory,
-  selectBrand,
-  handleFeaturePopup,
-} from "./actions/navigation";
-import { 
-  uploadFrontImage,
- } from "./actions/images";
- import { 
-  openSellingInfo,
-  fillSkuId,
-  fillMrp,
-  fillSellingPrice,
-  selectMinimumOrderQuantity,
-  selectFulfillmentBy,
-  selectProcurementType,
-  fillProcurementSLA,
-  fillStock,
-  selectShippingProvider,
-  selectListingStatus,
-  fillHeight,
-  fillBreadth,
-  fillLength,
-  fillWeight,
-  fillHsn,
-  fillLuxuryCess,
-  selectTaxCode,
-  selectCountryOfOrigin,
-  fillManufacturerDetails,
-  fillPackerDetails,
-  openProductInformation,
-
-  } from "./actions/pricing";
-import { fillBrandColor, fillItemsIncluded, fillStyleCode, openOptionalProductInfo, selectBrandSize, selectColor, selectFabric, selectIdealFor,  selectRobeAvailable, selectSuitableFor, selectType } from "./actions/product";
-import { updateKeywordCache } from "./utils/keywordManager";
-import { fillBustSize, fillInnerLining, fillKeyFeatures, fillOtherDetails, fillSearchKeywords, fillWarranty, goToVariantsPage, selectClosure, selectLength, selectNeck, selectOccasion, selectOrnamentationType, selectPackOf, selectSecondaryColor, selectSleeveLength, selectSleeveStyle } from "./actions/additional";
-import { waitForAiAutofill, waitForChangesSaved, waitForVariantsPage } from "./utils/waitForAiAutofill";
-import { waitForImageUpload } from "./utils/waitForImageUpload";
-import { addSizes, addVariantColors, copyFirstVariantToAll, fillVariantRows, saveAndGoBack } from "./actions/variants";
 import { fillCatalog } from "./actions/catalog";
 
 export async function runFlow(page: Page) {
