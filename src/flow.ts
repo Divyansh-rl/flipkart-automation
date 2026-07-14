@@ -73,7 +73,7 @@ export async function runFlow(page: Page) {
 
     ornamentationType: "Block Print",
 
-    otherDetails: "nighty for women",
+    otherDetails: ["nighty for women", "pure cotton nighty for women", "high quality nighty", "premium nighty"],
 
     warranty: "N/A",
 
@@ -81,23 +81,23 @@ export async function runFlow(page: Page) {
       colors: [
         {
           color: "Beige",
-          sku: "BUTTERFLY OPEN BEIGE@005",
+          sku: "VHJ-BUTTERFLY OPEN BEIGE",
         },
         {
           color: "Maroon",
-          sku: "BUTTERFLY OPEN MAROON@005",
+          sku: "VHJ-BUTTERFLY OPEN MAROON",
         },
         {
           color: "Blue",
-          sku: "BUTTERFLY OPEN BLUE@005",
+          sku: "VHJ-BUTTERFLY OPEN BLUE",
         },
         {
           color: "Green",
-          sku: "BUTTERFLY OPEN GREEN@005",
+          sku: "VHJ-BUTTERFLY OPEN GREEN",
         },
         {
           color: "Yellow",
-          sku: "BUTTERFLY OPEN YELLOW@005",
+          sku: "VHJ-BUTTERFLY OPEN YELLOW",
         },
       ],
       sizes: [

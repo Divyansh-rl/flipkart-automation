@@ -173,7 +173,7 @@ const defaultSize = catalog.variants.sizes[0];
 
   await selectOrnamentationType(page, catalog.ornamentationType);
 
-  await fillOtherDetails(page, "nighty for women");
+  await fillOtherDetails(page, catalog.otherDetails);
 
   await fillWarranty(page, catalog.warranty);
 

@@ -90,7 +90,7 @@ export async function fillSearchKeywords(page: Page) {
 
   const keywords = await getKeywords({
     start: 0,
-    count: 10,
+    count: 50,
     filter: false,
   });
 
@@ -393,7 +393,7 @@ export async function selectOrnamentationType(
 
 export async function fillOtherDetails(
   page: Page,
-  otherDetails: string
+  otherDetails: string[]
 ) {
   console.log("Entering Other Details...");
 
@@ -417,8 +417,10 @@ await container.click({
     await page.keyboard.press("Backspace");
   }
 
-  await input.fill(otherDetails);
-  await input.press("Enter");
+  for (const otherDetail of otherDetails) {
+    await input.fill(otherDetail);
+    await input.press("Enter");
+  }
 
   await input.blur();
 
